@@ -1,0 +1,8 @@
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\test.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\test.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\graph.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\graph.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\partition.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\partition.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\block_stats.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\block_stats.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\sbm.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\sbm.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\partition_prior.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\partition_prior.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\posterior.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\posterior.obj
+C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\src\gibbs_sampler.cpp;C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\build\bdn_test.dir\Debug\gibbs_sampler.obj
