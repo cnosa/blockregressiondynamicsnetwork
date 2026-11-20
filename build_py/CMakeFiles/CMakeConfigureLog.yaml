@@ -1,0 +1,1741 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineSystem.cmake:220 (message)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:541 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:583 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Versi├│n de MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+      Compilaci├│n iniciada a las 20/11/2026 4:32:25ÔÇ»p.ÔÇ»m..
+      
+      Proyecto "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\4.5.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" en nodo 1 (destinos predeterminados).
+      PrepareForBuild:
+        Creando directorio "Debug\\".
+        La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+        Creando directorio "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Se crear├í "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc145.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\4.5.1\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Se eliminar├í el archivo "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Aplicando tarea Touch a "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Compilaci├│n del proyecto terminada "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\4.5.1\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (destinos predeterminados).
+      
+      Compilaci├│n correcta.
+          0 Advertencia(s)
+          0 Errores
+      
+      Tiempo transcurrido 00:00:02.22
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/4.5.1/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:64 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:105 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/lld-link"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/lld-link.com"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/lld-link.exe"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/lld-link"
+      - "C:/Program Files/dotnet/lld-link.com"
+      - "C:/Program Files/dotnet/lld-link.exe"
+      - "C:/Program Files/dotnet/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/WSL/lld-link.com"
+      - "C:/Program Files/WSL/lld-link.exe"
+      - "C:/Program Files/WSL/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/lld-link"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/carlo/AppData/Local/Python/bin/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Python/bin/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Python/bin/lld-link"
+      - "C:/Users/carlo/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/carlo/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/carlo/AppData/Roaming/npm/lld-link"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/lld-link"
+      - "C:/Users/carlo/.dotnet/tools/lld-link.com"
+      - "C:/Users/carlo/.dotnet/tools/lld-link.exe"
+      - "C:/Users/carlo/.dotnet/tools/lld-link"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.com"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link.exe"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/lld-link"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.com"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link.exe"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/lld-link"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/lld-link.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/lld-link.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/lld-link"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/link.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/mt"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/mt.com"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/mt.exe"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/mt"
+      - "C:/Program Files/dotnet/mt.com"
+      - "C:/Program Files/dotnet/mt.exe"
+      - "C:/Program Files/dotnet/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/WSL/mt.com"
+      - "C:/Program Files/WSL/mt.exe"
+      - "C:/Program Files/WSL/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/mt.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/mt"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/carlo/AppData/Local/Python/bin/mt.com"
+      - "C:/Users/carlo/AppData/Local/Python/bin/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Python/bin/mt"
+      - "C:/Users/carlo/AppData/Roaming/npm/mt.com"
+      - "C:/Users/carlo/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/carlo/AppData/Roaming/npm/mt"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/mt.com"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/mt"
+      - "C:/Users/carlo/.dotnet/tools/mt.com"
+      - "C:/Users/carlo/.dotnet/tools/mt.exe"
+      - "C:/Users/carlo/.dotnet/tools/mt"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt.com"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt.exe"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/mt"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.com"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt.exe"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/mt"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/mt.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/mt.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/mt"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeFindBinUtils.cmake:249 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+    searched_directories:
+      - "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/Hostx64/x64/lib.exe"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:596 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC.cmake:569 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeCXXInformation.cmake:48 (include)"
+      - "CMakeLists.txt:3 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/sbin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/sbin/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/rc.com"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/rc"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/sbin/rc.com"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/sbin/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/sbin/rc"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/rc.com"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/rc"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.com"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc.exe"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/rc.com"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/rc.exe"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/rc"
+      - "C:/Program Files/dotnet/rc.com"
+      - "C:/Program Files/dotnet/rc.exe"
+      - "C:/Program Files/dotnet/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/WSL/rc.com"
+      - "C:/Program Files/WSL/rc.exe"
+      - "C:/Program Files/WSL/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/rc.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/rc"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/carlo/AppData/Local/Python/bin/rc.com"
+      - "C:/Users/carlo/AppData/Local/Python/bin/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Python/bin/rc"
+      - "C:/Users/carlo/AppData/Roaming/npm/rc.com"
+      - "C:/Users/carlo/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/carlo/AppData/Roaming/npm/rc"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/rc.com"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/rc"
+      - "C:/Users/carlo/.dotnet/tools/rc.com"
+      - "C:/Users/carlo/.dotnet/tools/rc.exe"
+      - "C:/Users/carlo/.dotnet/tools/rc"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc.com"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc.exe"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/rc"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.com"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc.exe"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/rc"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/rc.com"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/rc.exe"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/rc.com"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/rc.exe"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/rc"
+      - "C:/Program Files (x86)/blockdynamicnetworks/sbin/rc.com"
+      - "C:/Program Files (x86)/blockdynamicnetworks/sbin/rc.exe"
+      - "C:/Program Files (x86)/blockdynamicnetworks/sbin/rc"
+      - "C:/Program Files (x86)/blockdynamicnetworks/rc.com"
+      - "C:/Program Files (x86)/blockdynamicnetworks/rc.exe"
+      - "C:/Program Files (x86)/blockdynamicnetworks/rc"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:123 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m"
+      binary: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: false
+      stdout: |
+        Change Dir: 'C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_1e4a3.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Versi├│n de MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+        Compilaci├│n iniciada a las 20/11/2026 4:32:28ÔÇ»p.ÔÇ»m..
+        
+        Proyecto "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\cmTC_1e4a3.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\Debug\\".
+          Creando directorio "cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1e4a3.dir\\Debug\\\\" /Fd"cmTC_1e4a3.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.52.37029 for x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /Fo"cmTC_1e4a3.dir\\Debug\\\\" /Fd"cmTC_1e4a3.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.5\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\Debug\\cmTC_1e4a3.exe" /INCREMENTAL /ILK:"cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m/Debug/cmTC_1e4a3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m/Debug/cmTC_1e4a3.lib" /MACHINE:X64  /machine:x64 cmTC_1e4a3.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_1e4a3.vcxproj -> C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\Debug\\cmTC_1e4a3.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.tlog\\cmTC_1e4a3.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\cmTC_1e4a3.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+            0 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:02.28
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:291 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|"|[0-9]+>[ 	-]*Build:[ 	0-9]+ ms[ 	]*)?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        link line: [  C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hjrz5m\\Debug\\cmTC_1e4a3.exe" /INCREMENTAL /ILK:"cmTC_1e4a3.dir\\Debug\\cmTC_1e4a3.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m/Debug/cmTC_1e4a3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hjrz5m/Debug/cmTC_1e4a3.lib" /MACHINE:X64  /machine:x64 cmTC_1e4a3.dir\\Debug\\CMakeCXXCompilerABI.obj] ==> linker [C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe]
+        linker tool for 'CXX': C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe 
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CMakeDetermineLinkerId.cmake:41 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeDetermineCompilerABI.cmake:337 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:3 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/VC/Tools/MSVC/14.52.37025/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.52.37029.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:2655 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.13_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:3423 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "_Python3_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python313"
+      - "python3.13"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/lib/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/lib/python3.13/config-3.13/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/libs/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/python3.13/config-3.13/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/lib/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/lib/"
+    found: "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/python313.lib"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/blockdynamicnetworks/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:3619 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "_Python3_LIBRARY_DEBUG"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python313_d"
+    candidate_directories:
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+    searched_directories:
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/blockdynamicnetworks/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:1545 (find_library)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:3637 (_python_find_runtime_library)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "library"
+    variable: "_Python3_RUNTIME_LIBRARY_RELEASE"
+    description: "Path to a library."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python313"
+      - "python3.13"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/bin/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/bin/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/java8path/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/bin/"
+      - "C:/Program Files (x86)/Common Files/Oracle/Java/javapath/"
+      - "C:/Windows/System32/bin/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/bin/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/bin/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/bin/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/bin/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/bin/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/bin/"
+      - "C:/Program Files/Carl Zeiss/MicroscopyInstaller/"
+      - "C:/Program Files/dotnet/bin/"
+      - "C:/Program Files/dotnet/"
+      - "C:/Program Files/nodejs/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/WSL/bin/"
+      - "C:/Program Files/WSL/"
+      - "C:/Program Files/CMake/bin/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Eclipse Adoptium/jdk-8.0.472.8-hotspot/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/bin/"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/bin/"
+      - "C:/Users/carlo/AppData/Roaming/npm/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/bin/"
+      - "C:/Users/carlo/AppData/Local/Python/pythoncore-3.14-64/Scripts/"
+      - "C:/Users/carlo/.dotnet/tools/bin/"
+      - "C:/Users/carlo/.dotnet/tools/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/bin/"
+      - "C:/Users/carlo/.vscode/extensions/ms-python.debugpy-2026.6.0-win32-x64/bundled/scripts/noConfigScripts/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/bin/"
+      - "C:/Users/carlo/AppData/Roaming/Code/User/globalStorage/github.copilot-chat/debugCommand/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/bin/"
+      - "C:/Users/carlo/AppData/Local/Programs/Microsoft VS Code/bin/copilot-shim/"
+      - "C:/Program Files/lib/bin/"
+      - "C:/Program Files/lib/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/lib/bin/"
+      - "C:/Program Files (x86)/lib/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/lib/bin/"
+      - "C:/Program Files/CMake/lib/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/lib/bin/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/lib/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/bin/"
+      - "C:/Program Files (x86)/blockdynamicnetworks/bin/"
+      - "/bin/bin/"
+      - "/bin/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/lib/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/bin/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/bin/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/bin/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/libs/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/bin/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/bin/"
+    found: "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/python313.dll"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_LIBRARY_PATH:
+        - "C:/Program Files (x86)/blockdynamicnetworks/bin"
+        - "C:/Program Files/CMake/bin"
+        - "/bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:3958 (find_path)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "path"
+    variable: "_Python3_INCLUDE_DIR"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: false
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "Python.h"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/include/"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/"
+      - "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/Include/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/include/Python.h"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/Python.h"
+    found: "C:/Program Files/WindowsApps/PythonSoftwareFoundation.Python.3.13_3.13.3824.0_x64__qbz5n2kfra8p0/Include/"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CheckSourceCompiles.cmake:84 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/Internal/CheckCompilerFlag.cmake:18 (cmake_check_source_compiles)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/CheckCXXCompilerFlag.cmake:103 (cmake_check_compiler_flag)"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:338 (check_cxx_compiler_flag)"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:414 (_pybind11_return_if_cxx_and_linker_flags_work)"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Common.cmake:448 (_pybind11_generate_lto)"
+      - "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake:257 (include)"
+      - "CMakeLists.txt:24 (find_package)"
+    checks:
+      - "Performing Test HAS_MSVC_GL_LTCG"
+    directories:
+      source: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hrwhvm"
+      binary: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hrwhvm"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_STDLIB_MODULES_JSON: ""
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "HAS_MSVC_GL_LTCG"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hrwhvm'
+        
+        Run Build Command(s): "C:/Program Files (x86)/Microsoft Visual Studio/18/BuildTools/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d3e73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=18.0 /v:n
+        Versi├│n de MSBuild 18.12.3-1.26559.12+8df097b6f para .NET Framework
+        Compilaci├│n iniciada a las 20/11/2026 4:32:35ÔÇ»p.ÔÇ»m..
+        
+        Proyecto "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\cmTC_d3e73.vcxproj" en nodo 1 (destinos predeterminados).
+        PrepareForBuild:
+          La salida estructurada est├í habilitada. El formato del diagn├│stico del compilador reflejar├í la jerarqu├¡a de errores. Consulte https://aka.ms/cpp/structured-output para obtener m├ís detalles.
+          Creando directorio "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\Debug\\".
+          Creando directorio "cmTC_d3e73.dir\\Debug\\cmTC_d3e73.tlog\\".
+        InitializeBuildStatus:
+          Se crear├í "cmTC_d3e73.dir\\Debug\\cmTC_d3e73.tlog\\unsuccessfulbuild" porque se especific├│ "AlwaysCreate".
+          Aplicando tarea Touch a "cmTC_d3e73.dir\\Debug\\cmTC_d3e73.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\CL.exe /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d3e73.dir\\Debug\\\\" /Fd"cmTC_d3e73.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\src.cxx"
+          Microsoft (R) C/C++ Optimizing Compiler Version 19.52.37029 for x64
+          (C) Microsoft Corporation. Todos los derechos reservados.
+          cl /c /Zi /W1 /WX- /diagnostics:column /Od /Ob0 /GL /D _MBCS /D WIN32 /D _WINDOWS /D HAS_MSVC_GL_LTCG /D _MBCS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GR /std:c++17 /Fo"cmTC_d3e73.dir\\Debug\\\\" /Fd"cmTC_d3e73.dir\\Debug\\vc145.pdb" /external:W1 /TP /errorReport:queue "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\src.cxx"
+          src.cxx
+        Link:
+          C:\\Program Files (x86)\\Microsoft Visual Studio\\18\\BuildTools\\VC\\Tools\\MSVC\\14.52.37025\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\Debug\\cmTC_d3e73.exe" /INCREMENTAL /ILK:"cmTC_d3e73.dir\\Debug\\cmTC_d3e73.ilk" /NOLOGO "-LTCG" kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hrwhvm/Debug/cmTC_d3e73.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/CMakeScratch/TryCompile-hrwhvm/Debug/cmTC_d3e73.lib" /MACHINE:X64  /machine:x64 cmTC_d3e73.dir\\Debug\\src.obj
+        LINK : warning LNK4075: se omite '/INCREMENTAL' debido a la especificaci├│n '/LTCG' [C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\cmTC_d3e73.vcxproj]
+          Generando c├│digo
+          Generaci├│n de c├│digo finalizada
+          cmTC_d3e73.vcxproj -> C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\Debug\\cmTC_d3e73.exe
+        FinalizeBuildStatus:
+          Se eliminar├í el archivo "cmTC_d3e73.dir\\Debug\\cmTC_d3e73.tlog\\unsuccessfulbuild".
+          Aplicando tarea Touch a "cmTC_d3e73.dir\\Debug\\cmTC_d3e73.tlog\\cmTC_d3e73.lastbuildstate".
+        Compilaci├│n del proyecto terminada "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\cmTC_d3e73.vcxproj" (destinos predeterminados).
+        
+        Compilaci├│n correcta.
+        
+        "C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\cmTC_d3e73.vcxproj" (destino predeterminado) (1) ->
+        (Link destino) -> 
+          LINK : warning LNK4075: se omite '/INCREMENTAL' debido a la especificaci├│n '/LTCG' [C:\\Users\\carlo\\OneDrive\\Documents\\blockdynamicnetworks\\build_py\\CMakeFiles\\CMakeScratch\\TryCompile-hrwhvm\\cmTC_d3e73.vcxproj]
+        
+            1 Advertencia(s)
+            0 Errores
+        
+        Tiempo transcurrido 00:00:02.35
+        
+      exitCode: 0
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:24 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11.cps"
+        kind: "cps"
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake"
+      mode: "config"
+      version: "3.1.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython/Support.cmake:2655 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.5/Modules/FindPython3.cmake:727 (include)"
+      - "CMakeLists.txt:12 (find_package)"
+    mode: "program"
+    variable: "_Python3_EXECUTABLE_DEBUG"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "python3.16_d"
+      - "python3.15_d"
+      - "python3.14_d"
+      - "python3.13_d"
+      - "python3.12_d"
+      - "python3.11_d"
+      - "python3.10_d"
+      - "python3.9_d"
+      - "python3.8_d"
+      - "python3.7_d"
+      - "python3.6_d"
+      - "python3.5_d"
+      - "python3.4_d"
+      - "python3.3_d"
+      - "python3.2_d"
+      - "python3.1_d"
+      - "python3.0_d"
+      - "python3_d"
+      - "python_d"
+    candidate_directories:
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/"
+    searched_directories:
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.16_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.16_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.16_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.15_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.15_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.15_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.14_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.14_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.14_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.13_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.12_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.12_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.12_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.11_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.11_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.11_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.10_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.10_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.10_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.9_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.9_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.9_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.8_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.8_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.8_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.7_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.7_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.7_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.6_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.6_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.6_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.5_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.5_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.5_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.4_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.4_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.4_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.3_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.3_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.3_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.2_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.2_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.2_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.1_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.1_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.1_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.0_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.0_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3.0_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python3_d"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d.com"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d.exe"
+      - "C:/Users/carlo/AppData/Local/Microsoft/WindowsApps/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/python_d"
+    found: false
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+  -
+    kind: "find_package-v1"
+    backtrace:
+      - "CMakeLists.txt:24 (find_package)"
+    name: "pybind11"
+    configs:
+      -
+        filename: "pybind11.cps"
+        kind: "cps"
+      -
+        filename: "pybind11Config.cmake"
+        kind: "cmake"
+      -
+        filename: "pybind11-config.cmake"
+        kind: "cmake"
+    version_request:
+      exact: false
+    settings:
+      required: "required_explicit"
+      quiet: false
+      global: false
+      policy_scope: true
+      bypass_provider: false
+      names:
+        - "pybind11"
+      path_suffixes:
+        - ""
+      paths:
+        CMAKE_FIND_USE_CMAKE_PATH: true
+        CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+        CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+        CMAKE_FIND_USE_INSTALL_PREFIX: true
+        CMAKE_FIND_USE_PACKAGE_ROOT_PATH: true
+        CMAKE_FIND_USE_CMAKE_PACKAGE_REGISTRY: true
+        CMAKE_FIND_USE_SYSTEM_PACKAGE_REGISTRY: true
+        CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
+    candidates:
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/pybind11Config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/pybind11-config.cmake"
+        mode: "config"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/lib/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+      -
+        path: "C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/pkgRedirects/share/cps/pybind11.cps"
+        mode: "cps"
+        reason: "no_exist"
+    found:
+      path: "C:/Users/carlo/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0/LocalCache/local-packages/Python313/site-packages/pybind11/share/cmake/pybind11/pybind11Config.cmake"
+      mode: "config"
+      version: "3.1.0"
+    search_context:
+      CMAKE_PREFIX_PATH:
+        - "C:\\Users\\carlo\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.13_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python313\\site-packages\\pybind11\\share\\cmake\\pybind11"
+      ENV{PATH}:
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\java8path"
+        - "C:\\Program Files (x86)\\Common Files\\Oracle\\Java\\javapath"
+        - "C:\\Windows\\system32"
+        - "C:\\Windows"
+        - "C:\\Windows\\System32\\Wbem"
+        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\Windows\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Carl Zeiss\\MicroscopyInstaller\\"
+        - "C:\\Program Files\\dotnet\\"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\WSL\\"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Eclipse Adoptium\\jdk-8.0.472.8-hotspot\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\bin"
+        - "C:\\Users\\carlo\\AppData\\Roaming\\npm"
+        - "C:\\Users\\carlo\\AppData\\Local\\Python\\pythoncore-3.14-64\\Scripts"
+        - "C:\\Users\\carlo\\.dotnet\\tools"
+        - "c:\\Users\\carlo\\.vscode\\extensions\\ms-python.debugpy-2026.6.0-win32-x64\\bundled\\scripts\\noConfigScripts"
+        - "c:\\Users\\carlo\\AppData\\Roaming\\Code\\User\\globalStorage\\github.copilot-chat\\debugCommand"
+        - "C:\\Users\\carlo\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\copilot-shim"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/blockdynamicnetworks"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/blockdynamicnetworks"
+...

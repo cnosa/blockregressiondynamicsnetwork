@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\graph.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\partition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\block_stats.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\sbm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\partition_prior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\posterior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\gibbs_sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\split_merge_sampler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\bdn_core\mcmc_diagnostics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\carlo\OneDrive\Documents\blockdynamicnetworks\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{011B40B8-7274-3419-A907-CB20C6C07E94}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,5 @@
+C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/bdn_core.dir
+C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/bdn_test.dir
+C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/blockdynamicnetworks.dir
+C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/ALL_BUILD.dir
+C:/Users/carlo/OneDrive/Documents/blockdynamicnetworks/build_py/CMakeFiles/ZERO_CHECK.dir
