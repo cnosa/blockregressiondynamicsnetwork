@@ -37,6 +37,7 @@ add_library(bdn_core
     bdn_core/gibbs_sampler.cpp
     bdn_core/split_merge_sampler.cpp
     bdn_core/mcmc_diagnostics.cpp
+    bdn_core/hybrid_sampler.cpp
 )
 
 target_include_directories(bdn_core

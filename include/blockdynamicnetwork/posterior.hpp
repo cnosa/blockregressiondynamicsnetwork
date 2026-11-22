@@ -37,6 +37,14 @@ public:
     double a() const;
     double b() const;
 
+    // --------------------------------------------------------
+    // Access to the underlying graph
+    // --------------------------------------------------------
+
+    const Graph& graph() const noexcept {
+        return graph_;
+    }
+
 private:
 
     const Graph& graph_;

@@ -6,8 +6,137 @@
 #include <limits>
 #include <stdexcept>
 #include <numeric>
+#include <chrono>
+#include <iostream>
 
 namespace bdn {
+
+namespace {
+
+// ------------------------------------------------------------
+// Numerically stable functions
+// ------------------------------------------------------------
+
+// log(1 + exp(x)), avoiding overflow.
+double softplus(double x) {
+    if (x > 0.0)
+        return x + std::log1p(std::exp(-x));
+
+    return std::log1p(std::exp(x));
+}
+
+// Stable logistic function.
+double logistic(double x) {
+    if (x >= 0.0) {
+        return 1.0 / (1.0 + std::exp(-x));
+    }
+
+    double e = std::exp(x);
+    return e / (1.0 + e);
+}
+
+// log(sigmoid(x))
+double log_sigmoid(double x) {
+    return -softplus(-x);
+}
+
+// log(1 - sigmoid(x))
+double log_one_minus_sigmoid(double x) {
+    return -softplus(x);
+}
+
+// ------------------------------------------------------------
+// Structural affinity between a node and a pivot
+// ------------------------------------------------------------
+//
+// score(v, pivot) = A(v,pivot)
+//                 + lambda * common_neighbors(v,pivot)
+//
+// Common neighbors are restricted to the community being split.
+//
+// ------------------------------------------------------------
+
+double structural_score(
+    const Graph& graph,
+    std::size_t v,
+    std::size_t pivot,
+    const std::vector<bool>& in_community,
+    double lambda
+) {
+    double direct_connection =
+        graph.has_edge(v, pivot) ? 1.0 : 0.0;
+
+    double common_neighbors = 0.0;
+
+    const auto& neighbors_v = graph.neighbors(v);
+
+    for (std::size_t u : neighbors_v) {
+
+        if (!in_community[u])
+            continue;
+
+        if (graph.has_edge(u, pivot))
+            common_neighbors += 1.0;
+    }
+
+    return direct_connection + lambda * common_neighbors;
+}
+
+// ------------------------------------------------------------
+// Log proposal probabilities for structural Split
+// ------------------------------------------------------------
+//
+// x = beta * (score_i - score_j)
+//
+// log P(A) = log sigmoid(x)
+// log P(B) = log sigmoid(-x)
+//
+// ------------------------------------------------------------
+
+struct SplitProbabilities {
+    double probability_a;
+    double log_probability_a;
+    double log_probability_b;
+};
+
+SplitProbabilities structural_split_probabilities(
+    const Graph& graph,
+    std::size_t v,
+    std::size_t i,
+    std::size_t j,
+    const std::vector<bool>& in_community,
+    double lambda,
+    double beta
+) {
+    double score_i = structural_score(
+        graph,
+        v,
+        i,
+        in_community,
+        lambda
+    );
+
+    double score_j = structural_score(
+        graph,
+        v,
+        j,
+        in_community,
+        lambda
+    );
+
+    double x = beta * (score_i - score_j);
+
+    SplitProbabilities result;
+
+    result.probability_a = logistic(x);
+    result.log_probability_a = log_sigmoid(x);
+    result.log_probability_b = log_one_minus_sigmoid(x);
+
+    return result;
+}
+
+} // anonymous namespace
+
 
 // ------------------------------------------------------------
 // Constructor
@@ -18,7 +147,8 @@ SplitMergeSampler::SplitMergeSampler(
     std::size_t iterations,
     std::size_t burn_in,
     std::size_t thinning,
-    std::uint64_t seed
+    std::uint64_t seed,
+    bool verbose
 )
     : posterior_(posterior),
       iterations_(iterations),
@@ -30,10 +160,13 @@ SplitMergeSampler::SplitMergeSampler(
       final_partition_(std::nullopt),
       accepted_splits_(0),
       accepted_merges_(0),
-      results_()
+      results_(),
+      verbose_(verbose)
 {
     if (iterations_ == 0)
-        throw std::invalid_argument("Iterations must be > 0.");
+        throw std::invalid_argument(
+            "Iterations must be > 0."
+        );
 
     if (burn_in_ >= iterations_)
         throw std::invalid_argument(
@@ -41,8 +174,11 @@ SplitMergeSampler::SplitMergeSampler(
         );
 
     if (thinning_ == 0)
-        throw std::invalid_argument("Thinning must be >= 1.");
+        throw std::invalid_argument(
+            "Thinning must be >= 1."
+        );
 }
+
 
 // ------------------------------------------------------------
 // Select two distinct nodes uniformly
@@ -67,6 +203,7 @@ SplitMergeSampler::select_pivots(std::size_t n) {
     return {i, j};
 }
 
+
 // ------------------------------------------------------------
 // Log-sum-exp for two values
 // ------------------------------------------------------------
@@ -85,6 +222,7 @@ double SplitMergeSampler::log_sum_exp(double a, double b) {
         std::exp(a - m) + std::exp(b - m)
     );
 }
+
 
 // ------------------------------------------------------------
 // Metropolis-Hastings acceptance
@@ -108,8 +246,19 @@ bool SplitMergeSampler::accept_move(double log_ratio) {
     return std::log(u) < log_ratio;
 }
 
+
 // ------------------------------------------------------------
-// Split proposal using Restricted Gibbs Scan
+// Structural Split proposal
+// ------------------------------------------------------------
+//
+// The proposal no longer uses Restricted Gibbs Scan.
+//
+// All non-pivot nodes are assigned independently using structural
+// affinities to the two pivots.
+//
+// lambda = 1
+// beta  = 1
+//
 // ------------------------------------------------------------
 
 std::pair<Partition, double>
@@ -119,15 +268,34 @@ SplitMergeSampler::propose_split(
     std::size_t j
 ) {
 
+    const Graph& graph = posterior_.graph();
+
     std::vector<int> z = current.labels();
+
+    if (i >= z.size() || j >= z.size() || i == j)
+        throw std::invalid_argument(
+            "Invalid pivot indices."
+        );
 
     int community = z[i];
 
+    if (z[i] != z[j])
+        throw std::invalid_argument(
+            "Split pivots must belong to the same community."
+        );
+
+    // Nodes belonging to the community being split.
     std::vector<std::size_t> members;
 
+    std::vector<bool> in_community(z.size(), false);
+
     for (std::size_t v = 0; v < z.size(); ++v) {
-        if (z[v] == community)
+
+        if (z[v] == community) {
+
             members.push_back(v);
+            in_community[v] = true;
+        }
     }
 
     // Create two new labels.
@@ -136,59 +304,55 @@ SplitMergeSampler::propose_split(
     int label_a = max_label + 1;
     int label_b = max_label + 2;
 
+    // Fix the pivots in different groups.
     z[i] = label_a;
     z[j] = label_b;
 
-    // Initially assign remaining nodes to group A.
-    for (auto v : members) {
-        if (v != i && v != j)
-            z[v] = label_a;
-    }
+    // --------------------------------------------------------
+    // Structural proposal parameters
+    // --------------------------------------------------------
 
-    // Use a deterministic scan order.
-    std::vector<std::size_t> scan;
-
-    for (auto v : members) {
-        if (v != i && v != j)
-            scan.push_back(v);
-    }
+    constexpr double lambda = 1.0;
+    constexpr double beta = 1.0;
 
     double log_q = 0.0;
 
-    for (std::size_t v : scan) {
+    std::uniform_real_distribution<double> uniform(0.0, 1.0);
 
-        // Candidate A.
-        std::vector<int> z_a = z;
-        z_a[v] = label_a;
+    // --------------------------------------------------------
+    // Independent assignment of all non-pivot nodes
+    // --------------------------------------------------------
 
-        Partition p_a(z_a);
+    for (std::size_t v : members) {
 
-        double log_w_a = posterior_.log_probability(p_a);
+        if (v == i || v == j)
+            continue;
 
-        // Candidate B.
-        std::vector<int> z_b = z;
-        z_b[v] = label_b;
+        SplitProbabilities probs =
+            structural_split_probabilities(
+                graph,
+                v,
+                i,
+                j,
+                in_community,
+                lambda,
+                beta
+            );
 
-        Partition p_b(z_b);
-
-        double log_w_b = posterior_.log_probability(p_b);
-
-        double log_norm = log_sum_exp(log_w_a, log_w_b);
-
-        // Restricted Gibbs probabilities.
-        double log_prob_a = log_w_a - log_norm;
-        double log_prob_b = log_w_b - log_norm;
-
-        std::uniform_real_distribution<double> uniform(0.0, 1.0);
         double u = uniform(rng_);
 
-        if (std::log(u) < log_prob_a) {
+        if (u < probs.probability_a) {
+
             z[v] = label_a;
-            log_q += log_prob_a;
+
+            log_q += probs.log_probability_a;
+
         }
         else {
+
             z[v] = label_b;
-            log_q += log_prob_b;
+
+            log_q += probs.log_probability_b;
         }
     }
 
@@ -197,8 +361,13 @@ SplitMergeSampler::propose_split(
     return {proposed, log_q};
 }
 
+
 // ------------------------------------------------------------
 // Merge proposal
+// ------------------------------------------------------------
+//
+// Deterministic conditional on the selected pivots.
+// Community j is merged into community i.
 // ------------------------------------------------------------
 
 Partition SplitMergeSampler::propose_merge(
@@ -212,7 +381,13 @@ Partition SplitMergeSampler::propose_merge(
     int label_i = z[i];
     int label_j = z[j];
 
+    if (label_i == label_j)
+        throw std::invalid_argument(
+            "Merge pivots must belong to different communities."
+        );
+
     for (std::size_t v = 0; v < z.size(); ++v) {
+
         if (z[v] == label_j)
             z[v] = label_i;
     }
@@ -220,8 +395,16 @@ Partition SplitMergeSampler::propose_merge(
     return Partition(z);
 }
 
+
 // ------------------------------------------------------------
-// Probability of reverse split under RGS
+// Probability of reverse structural Split
+// ------------------------------------------------------------
+//
+// Given a merged partition and the original split target,
+// calculate the probability of reconstructing that split.
+//
+// This uses exactly the same structural proposal as propose_split.
+//
 // ------------------------------------------------------------
 
 double SplitMergeSampler::log_split_probability(
@@ -231,78 +414,89 @@ double SplitMergeSampler::log_split_probability(
     std::size_t j
 ) {
 
+    const Graph& graph = posterior_.graph();
+
     std::vector<int> z = merged.labels();
     std::vector<int> target = target_split.labels();
 
+    if (i >= z.size() || j >= z.size() || i == j)
+        throw std::invalid_argument(
+            "Invalid pivot indices."
+        );
+
     int merged_label = z[i];
+
     int target_a = target[i];
     int target_b = target[j];
 
-    if (target_a == target_b) {
+    if (target_a == target_b)
         throw std::invalid_argument(
             "Target partition must separate the pivot nodes."
         );
-    }
 
+    if (z[i] != z[j])
+        throw std::invalid_argument(
+            "Reverse Split pivots must belong to the same merged community."
+        );
+
+    // Identify the merged community.
     std::vector<std::size_t> members;
 
+    std::vector<bool> in_community(z.size(), false);
+
     for (std::size_t v = 0; v < z.size(); ++v) {
-        if (z[v] == merged_label)
+
+        if (z[v] == merged_label) {
+
             members.push_back(v);
+            in_community[v] = true;
+        }
     }
 
-    // Assign pivots to separate groups.
-    z[i] = target_a;
-    z[j] = target_b;
+    // --------------------------------------------------------
+    // Structural proposal parameters
+    // Must match propose_split().
+    // --------------------------------------------------------
 
-    // Initially place other nodes into group A.
-    for (auto v : members) {
-        if (v != i && v != j)
-            z[v] = target_a;
-    }
-
-    // Use the same deterministic scan order.
-    std::vector<std::size_t> scan;
-
-    for (auto v : members) {
-        if (v != i && v != j)
-            scan.push_back(v);
-    }
+    constexpr double lambda = 1.0;
+    constexpr double beta = 1.0;
 
     double log_q = 0.0;
 
-    for (std::size_t v : scan) {
+    // --------------------------------------------------------
+    // Reconstruct probability of the original split
+    // --------------------------------------------------------
 
-        // Probability of assigning to A.
-        std::vector<int> z_a = z;
-        z_a[v] = target_a;
+    for (std::size_t v : members) {
 
-        Partition p_a(z_a);
+        if (v == i || v == j)
+            continue;
 
-        double log_w_a = posterior_.log_probability(p_a);
+        SplitProbabilities probs =
+            structural_split_probabilities(
+                graph,
+                v,
+                i,
+                j,
+                in_community,
+                lambda,
+                beta
+            );
 
-        // Probability of assigning to B.
-        std::vector<int> z_b = z;
-        z_b[v] = target_b;
+        // Determine the side of the original split.
+        //
+        // We compare community membership relative to the pivots,
+        // not raw numeric labels, since Partition may normalize labels.
+        // ----------------------------------------------------
 
-        Partition p_b(z_b);
+        if (target[v] == target_a) {
 
-        double log_w_b = posterior_.log_probability(p_b);
-
-        double log_norm = log_sum_exp(log_w_a, log_w_b);
-
-        int target_label = target[v];
-
-        if (target_label == target_a) {
-
-            log_q += log_w_a - log_norm;
-            z[v] = target_a;
+            log_q += probs.log_probability_a;
 
         }
-        else if (target_label == target_b) {
+        else if (target[v] == target_b) {
 
-            log_q += log_w_b - log_norm;
-            z[v] = target_b;
+            log_q += probs.log_probability_b;
 
         }
         else {
@@ -315,6 +509,7 @@ double SplitMergeSampler::log_split_probability(
 
     return log_q;
 }
+
 
 // ------------------------------------------------------------
 // Run Split-Merge MCMC
@@ -342,7 +537,13 @@ void SplitMergeSampler::run(
             "SplitMergeSampler requires at least 2 nodes."
         );
 
-    // Reserve memory for full traces.
+    // Verify that the posterior graph and partition are compatible.
+    if (posterior_.graph().size() != n)
+        throw std::invalid_argument(
+            "Partition size does not match the posterior graph size."
+        );
+
+    // Reserve memory for traces.
     results_.k_trace.reserve(iterations_);
     results_.log_posterior_trace.reserve(iterations_);
 
@@ -355,6 +556,10 @@ void SplitMergeSampler::run(
     // --------------------------------------------------------
     // MCMC iterations
     // --------------------------------------------------------
+
+    auto start_time = std::chrono::steady_clock::now();
+
+    const std::size_t progress_interval = 5000;
 
     for (std::size_t iteration = 0;
          iteration < iterations_;
@@ -393,7 +598,7 @@ void SplitMergeSampler::run(
             double log_proposed =
                 posterior_.log_probability(proposed);
 
-            // Reverse merge is deterministic given the pivot pair.
+            // Reverse Merge is deterministic given the pivots.
             double log_ratio =
                 log_proposed - log_current - log_q_split;
 
@@ -420,7 +625,7 @@ void SplitMergeSampler::run(
             double log_proposed =
                 posterior_.log_probability(proposed);
 
-            // Reverse split probability.
+            // Probability of the reverse structural Split.
             double log_q_reverse =
                 log_split_probability(
                     proposed,
@@ -488,6 +693,38 @@ void SplitMergeSampler::run(
 
             results_.samples.push_back(current.labels());
         }
+
+
+        // --------------------------------------------------------
+        // Progress reporting
+        // --------------------------------------------------------
+
+        if (verbose_ &&
+            ((iteration + 1) % progress_interval == 0 ||
+            iteration + 1 == iterations_)) {
+
+            auto current_time = std::chrono::steady_clock::now();
+
+            double elapsed_seconds =
+                std::chrono::duration<double>(
+                    current_time - start_time
+                ).count();
+
+            double progress =
+                100.0 * static_cast<double>(iteration + 1)
+                / static_cast<double>(iterations_);
+
+            std::cout << "\r"
+                    << "Iteracion: " << iteration + 1
+                    << " / " << iterations_
+                    << " (" << progress << "%)"
+                    << " | Tiempo: " << elapsed_seconds << " s"
+                    << std::flush;
+        }
+    }
+
+    if (verbose_) {
+        std::cout << std::endl;
     }
 
     // --------------------------------------------------------
@@ -568,6 +805,7 @@ void SplitMergeSampler::run(
 
     final_partition_.emplace(current);
 }
+
 
 // ------------------------------------------------------------
 // Accessors

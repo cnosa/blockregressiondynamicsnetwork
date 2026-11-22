@@ -21,7 +21,8 @@ public:
         std::size_t iterations,
         std::size_t burn_in = 0,
         std::size_t thinning = 1,
-        std::uint64_t seed = 123
+        std::uint64_t seed = 123,
+        bool verbose = true
     );
 
     void run(const Partition& initial_partition);
@@ -45,6 +46,8 @@ private:
     std::size_t thinning_;
 
     std::mt19937_64 rng_;
+
+    bool verbose_;
 
     std::vector<Partition> samples_;
     std::vector<std::size_t> community_counts_;

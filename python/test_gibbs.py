@@ -1,31 +1,64 @@
 import sys
+import numpy as np
+import matplotlib.pyplot as plt
 
 sys.path.append(r"build_py\Debug")
 
 import blockdynamicnetworks as bdn
 
-# 1. Crear grafo
-G = bdn.Graph(6)
 
-G.add_edge(0, 1)
-G.add_edge(0, 2)
-G.add_edge(1, 2)
+n = 300
+G = bdn.Graph(n)
 
-G.add_edge(3, 4)
-G.add_edge(3, 5)
-G.add_edge(4, 5)
+rng = np.random.default_rng(123)
 
-# 2. Partición inicial
-Z = bdn.Partition([0, 0, 0, 1, 1, 1])
+# Tres comunidades de 100 nodos
+community_1 = range(0, 100)
+community_2 = range(100, 200)
+community_3 = range(200, 300)
 
-# 3. Prior
+communities = [community_1, community_2, community_3]
+
+# Probabilidades de conexión
+p_in = 0.12
+p_out = 0.015
+
+
+for i in range(n):
+    for j in range(i + 1, n):
+
+        # Identificar si pertenecen a la misma comunidad
+        same_community = (i // 100 == j // 100)
+
+        # Probabilidad de conexión
+        p = p_in if same_community else p_out
+
+        # Generar conexión
+        if rng.random() < p:
+            G.add_edge(i, j)
+
+# ============================================================
+# 3. PARTICIÓN INICIAL
+# ============================================================
+
+Z = bdn.Partition(
+    [0]*100 + [1]*100 + [2]*100
+)
+
+# ============================================================
+# 4. PRIOR
+# ============================================================
+
 prior = bdn.PartitionPrior(
     bdn.PriorType.DP,
     1.0,
     0.0
 )
 
-# 4. Modelo posterior
+# ============================================================
+# 5. MODELO POSTERIOR
+# ============================================================
+
 posterior = bdn.PosteriorModel(
     G,
     prior,
@@ -33,25 +66,37 @@ posterior = bdn.PosteriorModel(
     1.0
 )
 
-# 5. Crear Gibbs sampler
+# ============================================================
+# 6. GIBBS SAMPLER
+# ============================================================
+
 sampler = bdn.GibbsSampler(
     posterior,
-    10000,  # iteraciones
-    2000,   # burn-in
-    20,     # thinning
-    123     # semilla
+    10000,  # Iteraciones
+    2000,   # Burn-in
+    20,     # Thinning
+    123     # Semilla
 )
 
-# 6. Ejecutar
+# ============================================================
+# 7. EJECUTAR
+# ============================================================
+
 sampler.run(Z)
 
-# 7. Resultados
+# ============================================================
+# 8. RESULTADOS
+# ============================================================
+
 print("\n--- RESULTADOS GIBBS ---")
 
 print("Número de muestras:", len(sampler.samples()))
-print("Partición final:", sampler.final_partition().labels())
+
+print("Partición final:")
+print(sampler.final_partition().labels())
 
 print("\nNúmero de comunidades:")
 print(sampler.number_of_communities())
 
-print("\nNúmero de iteraciones:", sampler.iterations())
+print("\nNúmero de iteraciones:")
+print(sampler.iterations())

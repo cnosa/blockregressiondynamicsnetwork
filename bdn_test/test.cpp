@@ -10,6 +10,7 @@
 #include "blockdynamicnetwork/posterior.hpp"
 #include "blockdynamicnetwork/gibbs_sampler.hpp"
 #include "blockdynamicnetwork/split_merge_sampler.hpp"
+#include "blockdynamicnetwork/hybrid_sampler.hpp"
 
 #include <iostream>
 #include <vector>
@@ -436,6 +437,200 @@ int main() {
                 sm_results.merge_attempt_trace.end(),
                 0
             ) << "\n";
+
+
+    // ============================================================
+    // 12. Hybrid Sampler
+    // ============================================================
+
+    bdn::HybridSampler hybrid_sampler(
+        posterior,
+        100000,  // iterations
+        10000,   // burn-in
+        10,      // thinning
+        123,     // seed
+        0.75     // Gibbs probability
+    );
+
+    hybrid_sampler.run(z);
+
+
+    // ------------------------------------------------------------
+    // Count empirical partition frequencies
+    // ------------------------------------------------------------
+
+    std::map<std::string, std::size_t> hybrid_counts;
+
+    for (const auto& sample : hybrid_sampler.samples()) {
+        hybrid_counts[partition_key(sample)]++;
+    }
+
+
+    // ------------------------------------------------------------
+    // Compare exact vs empirical posterior
+    // ------------------------------------------------------------
+
+    std::cout << "\nValidation: Exact vs Hybrid Sampler\n";
+
+    for (std::size_t i = 0;
+         i < all_partitions.size();
+         ++i) {
+
+        std::string key = partition_key(all_partitions[i]);
+
+        double empirical = 0.0;
+
+        if (hybrid_counts.find(key) != hybrid_counts.end()) {
+
+            empirical =
+                static_cast<double>(hybrid_counts[key]) /
+                hybrid_sampler.samples().size();
+        }
+
+        std::cout << key
+                  << " | Exact: "
+                  << exact_probabilities[i]
+
+                  << " | Hybrid: "
+                  << empirical
+
+                  << " | Difference: "
+                  << std::abs(
+                        exact_probabilities[i] - empirical
+                    )
+
+                  << "\n";
+    }
+
+
+    // ------------------------------------------------------------
+    // General information
+    // ------------------------------------------------------------
+
+    const bdn::HybridSamplerResults& hybrid_results =
+        hybrid_sampler.results();
+
+    std::cout << "\n===== Hybrid Sampler Results =====\n";
+
+    std::cout << "Iterations: "
+              << hybrid_results.iterations
+              << "\n";
+
+    std::cout << "Burn-in: "
+              << hybrid_results.burn_in
+              << "\n";
+
+    std::cout << "Thinning: "
+              << hybrid_results.thinning
+              << "\n";
+
+    std::cout << "Saved samples: "
+              << hybrid_results.saved_samples
+              << "\n";
+
+    std::cout << "Gibbs probability: "
+              << hybrid_results.gibbs_probability
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Number of iterations per sampler
+    // ------------------------------------------------------------
+
+    std::cout << "\n===== Sampler Usage =====\n";
+
+    std::cout << "Gibbs iterations: "
+              << hybrid_results.gibbs_iterations
+              << "\n";
+
+    std::cout << "Split-Merge iterations: "
+              << hybrid_results.split_merge_iterations
+              << "\n";
+
+    std::cout << "Total: "
+              << hybrid_results.gibbs_iterations
+                 + hybrid_results.split_merge_iterations
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Acceptance rates
+    // ------------------------------------------------------------
+
+    std::cout << "\n===== Acceptance Rates =====\n";
+
+    std::cout << std::fixed
+              << std::setprecision(4);
+
+    std::cout << "Split acceptance rate: "
+              << hybrid_results.split_acceptance_rate
+              << "\n";
+
+    std::cout << "Merge acceptance rate: "
+              << hybrid_results.merge_acceptance_rate
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Effective Sample Size
+    // ------------------------------------------------------------
+
+    std::cout << "\n===== Effective Sample Size (ESS) =====\n";
+
+    std::cout << "ESS (number of communities): "
+              << hybrid_results.ess_k
+              << "\n";
+
+    std::cout << "ESS (log-posterior): "
+              << hybrid_results.ess_log_posterior
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Trace information
+    // ------------------------------------------------------------
+
+    std::cout << "\n===== Trace Information =====\n";
+
+    std::cout << "K trace length: "
+              << hybrid_results.k_trace.size()
+              << "\n";
+
+    std::cout << "Log-posterior trace length: "
+              << hybrid_results.log_posterior_trace.size()
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Split and merge attempts
+    // ------------------------------------------------------------
+
+    std::cout << "Split attempts: "
+              << std::accumulate(
+                    hybrid_results.split_attempt_trace.begin(),
+                    hybrid_results.split_attempt_trace.end(),
+                    0
+                )
+              << "\n";
+
+    std::cout << "Merge attempts: "
+              << std::accumulate(
+                    hybrid_results.merge_attempt_trace.begin(),
+                    hybrid_results.merge_attempt_trace.end(),
+                    0
+                )
+              << "\n";
+
+
+    // ------------------------------------------------------------
+    // Final partition
+    // ------------------------------------------------------------
+
+    std::cout << "\n===== Final Partition =====\n";
+
+    std::cout << partition_key(
+        hybrid_sampler.final_partition()
+    ) << "\n";
 
     return 0;
 }

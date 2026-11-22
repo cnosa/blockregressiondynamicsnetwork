@@ -9,6 +9,8 @@
 #include "blockdynamicnetwork/gibbs_sampler.hpp"
 #include "blockdynamicnetwork/split_merge_sampler.hpp"
 #include "blockdynamicnetwork/split_merge_results.hpp"
+#include "blockdynamicnetwork/hybrid_sampler.hpp"
+#include "blockdynamicnetwork/hybrid_sampler_results.hpp"
 #include "blockdynamicnetwork/mcmc_diagnostics.hpp"
 
 namespace py = pybind11;
@@ -270,17 +272,19 @@ PYBIND11_MODULE(blockdynamicnetworks, m) {
     py::class_<bdn::SplitMergeSampler>(m, "SplitMergeSampler")
 
         .def(py::init<
-                 const bdn::PosteriorModel&,
-                 std::size_t,
-                 std::size_t,
-                 std::size_t,
-                 std::uint64_t>(),
-             py::arg("posterior"),
-             py::arg("iterations"),
-             py::arg("burn_in") = 0,
-             py::arg("thinning") = 1,
-             py::arg("seed") = 123,
-             py::keep_alive<1, 2>())
+          const bdn::PosteriorModel&,
+          std::size_t,
+          std::size_t,
+          std::size_t,
+          std::uint64_t,
+          bool>(),
+          py::arg("posterior"),
+          py::arg("iterations"),
+          py::arg("burn_in") = 0,
+          py::arg("thinning") = 1,
+          py::arg("seed") = 123,
+          py::arg("verbose") = true,
+          py::keep_alive<1, 2>())
 
         .def("run",
              &bdn::SplitMergeSampler::run,
@@ -308,7 +312,123 @@ PYBIND11_MODULE(blockdynamicnetworks, m) {
         .def("results",
              &bdn::SplitMergeSampler::results,
              py::return_value_policy::reference_internal);
+     
+     // ==================================================
+     // HybridSamplerResults
+     // ==================================================
 
+     py::class_<bdn::HybridSamplerResults>(m, "HybridSamplerResults")
+
+     .def_readonly("samples",
+                    &bdn::HybridSamplerResults::samples)
+
+     .def_readonly("k_trace",
+                    &bdn::HybridSamplerResults::k_trace)
+
+     .def_readonly("log_posterior_trace",
+                    &bdn::HybridSamplerResults::log_posterior_trace)
+
+     .def_readonly("sampler_selection_trace",
+                    &bdn::HybridSamplerResults::sampler_selection_trace)
+
+     .def_readonly("gibbs_iterations",
+                    &bdn::HybridSamplerResults::gibbs_iterations)
+
+     .def_readonly("split_merge_iterations",
+                    &bdn::HybridSamplerResults::split_merge_iterations)
+
+     .def_readonly("split_attempt_trace",
+                    &bdn::HybridSamplerResults::split_attempt_trace)
+
+     .def_readonly("merge_attempt_trace",
+                    &bdn::HybridSamplerResults::merge_attempt_trace)
+
+     .def_readonly("split_acceptance_trace",
+                    &bdn::HybridSamplerResults::split_acceptance_trace)
+
+     .def_readonly("merge_acceptance_trace",
+                    &bdn::HybridSamplerResults::merge_acceptance_trace)
+
+     .def_readonly("split_acceptance_rate",
+                    &bdn::HybridSamplerResults::split_acceptance_rate)
+
+     .def_readonly("merge_acceptance_rate",
+                    &bdn::HybridSamplerResults::merge_acceptance_rate)
+
+     .def_readonly("ess_k",
+                    &bdn::HybridSamplerResults::ess_k)
+
+     .def_readonly("ess_log_posterior",
+                    &bdn::HybridSamplerResults::ess_log_posterior)
+
+     .def_readonly("iterations",
+                    &bdn::HybridSamplerResults::iterations)
+
+     .def_readonly("burn_in",
+                    &bdn::HybridSamplerResults::burn_in)
+
+     .def_readonly("thinning",
+                    &bdn::HybridSamplerResults::thinning)
+
+     .def_readonly("saved_samples",
+                    &bdn::HybridSamplerResults::saved_samples)
+
+     .def_readonly("gibbs_probability",
+                    &bdn::HybridSamplerResults::gibbs_probability)
+
+     .def_readonly("final_partition",
+                    &bdn::HybridSamplerResults::final_partition);
+
+     // ==================================================
+     // HybridSampler
+     // ==================================================
+
+     py::class_<bdn::HybridSampler>(m, "HybridSampler")
+
+     .def(py::init<
+          const bdn::PosteriorModel&,
+          std::size_t,
+          std::size_t,
+          std::size_t,
+          std::uint64_t,
+          double>(),
+          py::arg("posterior"),
+          py::arg("iterations"),
+          py::arg("burn_in") = 0,
+          py::arg("thinning") = 1,
+          py::arg("seed") = 123,
+          py::arg("gibbs_probability") = 0.75,
+          py::keep_alive<1, 2>())
+
+     .def("run",
+          &bdn::HybridSampler::run,
+          py::arg("initial_partition"))
+
+     .def("samples",
+          &bdn::HybridSampler::samples)
+
+     .def("number_of_communities",
+          &bdn::HybridSampler::number_of_communities)
+
+     .def("final_partition",
+          &bdn::HybridSampler::final_partition,
+          py::return_value_policy::reference_internal)
+
+     .def("iterations",
+          &bdn::HybridSampler::iterations)
+
+     .def("gibbs_iterations",
+          &bdn::HybridSampler::gibbs_iterations)
+
+     .def("split_merge_iterations",
+          &bdn::HybridSampler::split_merge_iterations)
+
+     .def("gibbs_probability",
+          &bdn::HybridSampler::gibbs_probability)
+
+     .def("results",
+          &bdn::HybridSampler::results,
+          py::return_value_policy::reference_internal);
 
     // ==================================================
     // MCMC diagnostics

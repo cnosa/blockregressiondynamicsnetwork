@@ -1,0 +1,50 @@
+﻿# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Entornos virtuales
+venv/
+.venv/
+env/
+ENV/
+
+# Pickle y serialización
+*.pkl
+*.pickle
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Cachés
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Archivos temporales
+*.tmp
+*.temp
+*.log
+
+# Variables de entorno y secretos
+.env
+.env.*
+!.env.example
+
+# Modelos y archivos pesados
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.hdf5
+*.onnx
+*.joblib
+
+# IDE
+.vscode/
+.idea/
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
