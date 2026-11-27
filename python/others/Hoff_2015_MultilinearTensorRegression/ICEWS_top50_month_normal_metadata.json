@@ -395,11 +395,15 @@
         "Verbal-",
         "Verbal+"
     ],
-    "transformation": "Normal quantile transformation",
+    "transformation": "Individual normal quantile transformation preserving original mean and variance",
     "dimensions": [
         4,
         50,
         50,
         336
+    ],
+    "preserved_moments": [
+        "mean",
+        "variance"
     ]
 }
